@@ -43,6 +43,14 @@
           android:fragment="com.palyrim.lab.fragments.QuickSettings"
 	      settings:layout="@layout/top_level_card"
           android:icon="@drawable/palyrim_settings_quicksettings"/>
+          
+  <Preference
+            android:key="gestures_category"
+            android:title="@string/gestures_title"
+            android:fragment="com.android.settings.gestures.GestureSettings"
+            settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController"
+            settings:layout="@layout/top_level_card"
+            android:icon="@drawable/palyrim_settings_gestures"/>        
 
    <Preference
           android:key="lockscreen_category"

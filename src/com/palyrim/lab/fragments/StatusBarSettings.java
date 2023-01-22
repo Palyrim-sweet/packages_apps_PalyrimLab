@@ -1,4 +1,4 @@
-package com.radiant.extras.fragments;
+package com.palyrim.lab.fragments;
 
 import com.android.internal.logging.nano.MetricsProto;
 
@@ -41,7 +41,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
-        addPreferencesFromResource(R.xml.radiant_extras_statusbar);
+        addPreferencesFromResource(R.xml.statusbar);
 
         PreferenceScreen prefSet = getPreferenceScreen();
 
@@ -55,7 +55,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.Radiant;
+        return MetricsProto.MetricsEvent.PALYRIM;
     }
 
 }

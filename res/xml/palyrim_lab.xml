@@ -50,7 +50,19 @@
             android:fragment="com.android.settings.gestures.GestureSettings"
             settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController"
             settings:layout="@layout/top_level_card"
-            android:icon="@drawable/palyrim_settings_gestures"/>        
+            android:icon="@drawable/palyrim_settings_gestures"/>
+            
+  <PreferenceScreen
+        android:key="gaming_category"
+        android:icon="@drawable/palyrim_settings_gamespace"
+        android:title="@string/game_space_title"
+        android:summary="@string/game_space_summary"
+        settings:layout="@layout/top_level_card" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="io.chaldeaprjkt.gamespace"
+                android:targetClass="io.chaldeaprjkt.gamespace.settings.SettingsActivity" />
+   </PreferenceScreen>           
 
    <Preference
           android:key="lockscreen_category"

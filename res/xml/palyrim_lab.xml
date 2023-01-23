@@ -34,7 +34,7 @@
           android:summary="@string/statusbar_settings_summary"
           android:fragment="com.palyrim.lab.fragments.StatusBarSettings"
 	      settings:layout="@layout/top_level_card"
-          android:icon="@drawable/plyrim_settings_statusbar"/>
+          android:icon="@drawable/palyrim_settings_statusbar"/>
           
   <Preference
           android:key="quicksettings_category"

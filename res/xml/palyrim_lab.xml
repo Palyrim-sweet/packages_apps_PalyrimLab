@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title="@string/palyrim_lab_title" >
     
@@ -47,22 +47,11 @@
   <Preference
             android:key="gestures_category"
             android:title="@string/gestures_title"
+            android:summary="@string/gesture_settings_summary"
             android:fragment="com.android.settings.gestures.GestureSettings"
             settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController"
             settings:layout="@layout/top_level_card"
             android:icon="@drawable/palyrim_settings_gestures"/>
-            
-  <PreferenceScreen
-        android:key="gaming_category"
-        android:icon="@drawable/palyrim_settings_gamespace"
-        android:title="@string/game_space_title"
-        android:summary="@string/game_space_summary"
-        settings:layout="@layout/top_level_card" >
-            <intent
-                android:action="android.intent.action.MAIN"
-                android:targetPackage="io.chaldeaprjkt.gamespace"
-                android:targetClass="io.chaldeaprjkt.gamespace.settings.SettingsActivity" />
-   </PreferenceScreen>           
 
    <Preference
           android:key="lockscreen_category"
